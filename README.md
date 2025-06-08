@@ -62,6 +62,10 @@ O painel desenvolvido no Node-RED exibe em tempo real:
 - Histórico recente de alertas
 - Canal de controle (para atuadores, se aplicável)
 
+### Dashboard ThingSpeak
+![image](https://github.com/user-attachments/assets/35a6a7d7-57a0-4a69-93d3-3bd22d561690)
+
+
 ---
 
 ## 🔁 Como Executar a Solução
