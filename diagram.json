@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "author": "Juliana Moreira",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "potentiometer", "id": "enchenteSensor", "top": 30, "left": 20, "attrs": {} },
+    { "type": "potentiometer", "id": "chuvaSensor", "top": 70, "left": 20, "attrs": {} },
+    { "type": "potentiometer", "id": "ventoSensor", "top": 110, "left": 20, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "enchenteSensor:wiper", "esp:32", "", [] ],
+    [ "chuvaSensor:wiper", "esp:34", "", [] ],
+    [ "ventoSensor:wiper", "esp:35", "", [] ]
+  ],
+  "dependencies": {}
+}
